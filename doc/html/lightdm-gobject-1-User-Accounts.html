@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>User Accounts: LightDM Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="LightDM Reference Manual">
+<link rel="up" href="core.html" title="Part I. liblightdm-gobject">
+<link rel="prev" href="lightdm-gobject-1-Sessions.html" title="User Sessions">
+<link rel="next" href="lightdm-gobject-1-Power-Management.html" title="Power Management">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#lightdm-gobject-1-User-Accounts.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="lightdm-gobject-1-Sessions.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="lightdm-gobject-1-Power-Management.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="lightdm-gobject-1-User-Accounts"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="lightdm-gobject-1-User-Accounts.top_of_page"></a>User Accounts</span></h2>
+<p>User Accounts — Get information on user accounts on this system</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-User-Accounts.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-User-Accounts.html#changed" title="changed ()">*changed</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-background" title="lightdm_user_get_background ()">lightdm_user_get_background</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-display-name" title="lightdm_user_get_display_name ()">lightdm_user_get_display_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-has-messages" title="lightdm_user_get_has_messages ()">lightdm_user_get_has_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-home-directory" title="lightdm_user_get_home_directory ()">lightdm_user_get_home_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-image" title="lightdm_user_get_image ()">lightdm_user_get_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-language" title="lightdm_user_get_language ()">lightdm_user_get_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-layout" title="lightdm_user_get_layout ()">lightdm_user_get_layout</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-layouts" title="lightdm_user_get_layouts ()">lightdm_user_get_layouts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-logged-in" title="lightdm_user_get_logged_in ()">lightdm_user_get_logged_in</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-name" title="lightdm_user_get_name ()">lightdm_user_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-real-name" title="lightdm_user_get_real_name ()">lightdm_user_get_real_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-session" title="lightdm_user_get_session ()">lightdm_user_get_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">uid_t</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-uid" title="lightdm_user_get_uid ()">lightdm_user_get_uid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-User-Accounts.html#user-added" title="user_added ()">*user_added</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-User-Accounts.html#user-changed" title="user_changed ()">*user_changed</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-User-Accounts.html#user-removed" title="user_removed ()">*user_removed</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">LightDMUserList</span> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-instance" title="lightdm_user_list_get_instance ()">lightdm_user_list_get_instance</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-length" title="lightdm_user_list_get_length ()">lightdm_user_list_get_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">LightDMUser</span> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-user-by-name" title="lightdm_user_list_get_user_by_name ()">lightdm_user_list_get_user_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-users" title="lightdm_user_list_get_users ()">lightdm_user_list_get_users</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-User-Accounts.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;lightdm.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-User-Accounts.description"></a><h2>Description</h2>
+<p>
+Object containing information about a user present on this system. <span class="type">LightDMUser</span> objects are not created by the user, but provided by the <span class="type">LightDMGreeter</span> object.
+</p>
+<p>
+A user has the following properties:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>The user name is used to refer to this user.</p></li>
+<li class="listitem"><p>The real name is the name of the person that owns this user account.</p></li>
+<li class="listitem"><p>The display name provides text to use for the user label.</p></li>
+<li class="listitem"><p>The image URI provides an image to use for the user.</p></li>
+</ul></div>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-User-Accounts.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="changed"></a><h3>changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*changed<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-background"></a><h3>lightdm_user_get_background ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_background (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the background file path for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-background.returns"></a><h4>Returns</h4>
+<p> The background file path for the given user or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if no path. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-display-name"></a><h3>lightdm_user_get_display_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_display_name (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the display name of a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-display-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-display-name.returns"></a><h4>Returns</h4>
+<p> The display name of the given user</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-has-messages"></a><h3>lightdm_user_get_has_messages ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_user_get_has_messages (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Check if a user has waiting messages.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-has-messages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-has-messages.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the user has waiting messages.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-home-directory"></a><h3>lightdm_user_get_home_directory ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_home_directory (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the home directory for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-home-directory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-home-directory.returns"></a><h4>Returns</h4>
+<p> The users home directory</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-image"></a><h3>lightdm_user_get_image ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_image (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the image URI for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-image.returns"></a><h4>Returns</h4>
+<p> The image URI for the given user or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if no URI. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-language"></a><h3>lightdm_user_get_language ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_language (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the language for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-language.returns"></a><h4>Returns</h4>
+<p> The language in the form of a local specification (e.g. "de_DE.UTF-8") for the given user or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if using the system default locale. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-layout"></a><h3>lightdm_user_get_layout ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_layout (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the keyboard layout for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-layout.returns"></a><h4>Returns</h4>
+<p> The keyboard layout for the given user or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if using system defaults.  Copy the value if you want to use it long term. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-layouts"></a><h3>lightdm_user_get_layouts ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+lightdm_user_get_layouts (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the configured keyboard layouts for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-layouts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-layouts.returns"></a><h4>Returns</h4>
+<p> A NULL-terminated array of keyboard layouts for the given user.  Copy the values if you want to use them long term. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-logged-in"></a><h3>lightdm_user_get_logged_in ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_user_get_logged_in (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Check if a user is logged in.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-logged-in.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-logged-in.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the user is currently logged in.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-name"></a><h3>lightdm_user_get_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_name (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the name of a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-name.returns"></a><h4>Returns</h4>
+<p> The name of the given user</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-real-name"></a><h3>lightdm_user_get_real_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_real_name (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the real name of a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-real-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-real-name.returns"></a><h4>Returns</h4>
+<p> The real name of the given user</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-session"></a><h3>lightdm_user_get_session ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_user_get_session (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>Get the session for a user.</p>
+<div class="refsect3">
+<a name="lightdm-user-get-session.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUser</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-get-session.returns"></a><h4>Returns</h4>
+<p> The session for the given user or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if using system defaults. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-get-uid"></a><h3>lightdm_user_get_uid ()</h3>
+<pre class="programlisting"><span class="returnvalue">uid_t</span>
+lightdm_user_get_uid (<em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="user-added"></a><h3>user_added ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*user_added<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMUserList</span> *user_list</code></em>,
+               <em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="user-changed"></a><h3>user_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*user_changed<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMUserList</span> *user_list</code></em>,
+                 <em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="user-removed"></a><h3>user_removed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*user_removed<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMUserList</span> *user_list</code></em>,
+                 <em class="parameter"><code><span class="type">LightDMUser</span> *user</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-list-get-instance"></a><h3>lightdm_user_list_get_instance ()</h3>
+<pre class="programlisting"><span class="returnvalue">LightDMUserList</span> *
+lightdm_user_list_get_instance (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the user list.</p>
+<div class="refsect3">
+<a name="lightdm-user-list-get-instance.returns"></a><h4>Returns</h4>
+<p> the <span class="type">LightDMUserList</span>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-list-get-length"></a><h3>lightdm_user_list_get_length ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+lightdm_user_list_get_length (<em class="parameter"><code><span class="type">LightDMUserList</span> *user_list</code></em>);</pre>
+<div class="refsect3">
+<a name="lightdm-user-list-get-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user_list</p></td>
+<td class="parameter_description"><p>a <span class="type">LightDMUserList</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-list-get-length.returns"></a><h4>Returns</h4>
+<p> The number of users able to log in</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-list-get-user-by-name"></a><h3>lightdm_user_list_get_user_by_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">LightDMUser</span> *
+lightdm_user_list_get_user_by_name (<em class="parameter"><code><span class="type">LightDMUserList</span> *user_list</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *username</code></em>);</pre>
+<p>Get infomation about a given user or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if this user doesn't exist.</p>
+<div class="refsect3">
+<a name="lightdm-user-list-get-user-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>user_list</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUserList</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>Name of user to get.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-list-get-user-by-name.returns"></a><h4>Returns</h4>
+<p> A <span class="type">LightDMUser</span> entry for the given user. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-user-list-get-users"></a><h3>lightdm_user_list_get_users ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+lightdm_user_list_get_users (<em class="parameter"><code><span class="type">LightDMUserList</span> *user_list</code></em>);</pre>
+<p>Get a list of users to present to the user.  This list may be a subset of the
+available users and may be empty depending on the server configuration.</p>
+<div class="refsect3">
+<a name="lightdm-user-list-get-users.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user_list</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMUserList</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-user-list-get-users.returns"></a><h4>Returns</h4>
+<p> A list of <span class="type">LightDMUser</span> that should be presented to the user. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> LightDMUser][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-User-Accounts.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

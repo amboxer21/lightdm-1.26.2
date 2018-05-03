@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="LightDM Reference Manual" link="index.html" author="" name="lightdm-gobject-1" version="2" language="c">
+  <chapters>
+    <sub name="liblightdm-gobject" link="core.html">
+      <sub name="Greeter Interface" link="lightdm-gobject-1-Greeter-Interface.html"/>
+      <sub name="Languages" link="lightdm-gobject-1-Languages.html"/>
+      <sub name="Keyboard Layouts" link="lightdm-gobject-1-Keyboard-Layout.html"/>
+      <sub name="User Sessions" link="lightdm-gobject-1-Sessions.html"/>
+      <sub name="User Accounts" link="lightdm-gobject-1-User-Accounts.html"/>
+      <sub name="Power Management" link="lightdm-gobject-1-Power-Management.html"/>
+      <sub name="System Information" link="lightdm-gobject-1-System-Information.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="show_message ()" link="lightdm-gobject-1-Greeter-Interface.html#show-message"/>
+    <keyword type="function" name="show_prompt ()" link="lightdm-gobject-1-Greeter-Interface.html#show-prompt"/>
+    <keyword type="function" name="authentication_complete ()" link="lightdm-gobject-1-Greeter-Interface.html#authentication-complete"/>
+    <keyword type="function" name="autologin_timer_expired ()" link="lightdm-gobject-1-Greeter-Interface.html#autologin-timer-expired"/>
+    <keyword type="function" name="idle ()" link="lightdm-gobject-1-Greeter-Interface.html#idle"/>
+    <keyword type="function" name="reset ()" link="lightdm-gobject-1-Greeter-Interface.html#reset"/>
+    <keyword type="function" name="lightdm_greeter_new ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-new"/>
+    <keyword type="function" name="lightdm_greeter_set_resettable ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-set-resettable"/>
+    <keyword type="function" name="lightdm_greeter_connect_to_daemon ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon"/>
+    <keyword type="function" name="lightdm_greeter_connect_to_daemon_finish ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon-finish"/>
+    <keyword type="function" name="lightdm_greeter_connect_to_daemon_sync ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon-sync"/>
+    <keyword type="function" name="lightdm_greeter_ensure_shared_data_dir ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-ensure-shared-data-dir"/>
+    <keyword type="function" name="lightdm_greeter_ensure_shared_data_dir_finish ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-ensure-shared-data-dir-finish"/>
+    <keyword type="function" name="lightdm_greeter_ensure_shared_data_dir_sync ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-ensure-shared-data-dir-sync"/>
+    <keyword type="function" name="lightdm_greeter_get_default_session_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-default-session-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_lock_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-lock-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_has_guest_account_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-has-guest-account-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_hide_users_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-hide-users-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_show_manual_login_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-show-manual-login-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_show_remote_login_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-show-remote-login-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_select_user_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-select-user-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_select_guest_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-select-guest-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_autologin_user_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-autologin-user-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_autologin_guest_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-autologin-guest-hint"/>
+    <keyword type="function" name="lightdm_greeter_get_autologin_timeout_hint ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-autologin-timeout-hint"/>
+    <keyword type="function" name="lightdm_greeter_set_language ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-set-language"/>
+    <keyword type="function" name="lightdm_greeter_cancel_autologin ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-cancel-autologin"/>
+    <keyword type="function" name="lightdm_greeter_authenticate ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate"/>
+    <keyword type="function" name="lightdm_greeter_authenticate_as_guest ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate-as-guest"/>
+    <keyword type="function" name="lightdm_greeter_authenticate_autologin ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate-autologin"/>
+    <keyword type="function" name="lightdm_greeter_authenticate_remote ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate-remote"/>
+    <keyword type="function" name="lightdm_greeter_respond ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-respond"/>
+    <keyword type="function" name="lightdm_greeter_cancel_authentication ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-cancel-authentication"/>
+    <keyword type="function" name="lightdm_greeter_get_in_authentication ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-in-authentication"/>
+    <keyword type="function" name="lightdm_greeter_get_is_authenticated ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-is-authenticated"/>
+    <keyword type="function" name="lightdm_greeter_get_authentication_user ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-authentication-user"/>
+    <keyword type="function" name="lightdm_greeter_start_session ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session"/>
+    <keyword type="function" name="lightdm_greeter_start_session_finish ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session-finish"/>
+    <keyword type="function" name="lightdm_greeter_start_session_sync ()" link="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session-sync"/>
+    <keyword type="enum" name="enum LightDMMessageType" link="lightdm-gobject-1-Greeter-Interface.html#LightDMMessageType"/>
+    <keyword type="enum" name="enum LightDMPromptType" link="lightdm-gobject-1-Greeter-Interface.html#LightDMPromptType"/>
+    <keyword type="function" name="lightdm_get_languages ()" link="lightdm-gobject-1-Languages.html#lightdm-get-languages"/>
+    <keyword type="function" name="lightdm_get_language ()" link="lightdm-gobject-1-Languages.html#lightdm-get-language"/>
+    <keyword type="function" name="lightdm_language_get_code ()" link="lightdm-gobject-1-Languages.html#lightdm-language-get-code"/>
+    <keyword type="function" name="lightdm_language_get_name ()" link="lightdm-gobject-1-Languages.html#lightdm-language-get-name"/>
+    <keyword type="function" name="lightdm_language_get_territory ()" link="lightdm-gobject-1-Languages.html#lightdm-language-get-territory"/>
+    <keyword type="function" name="lightdm_language_matches ()" link="lightdm-gobject-1-Languages.html#lightdm-language-matches"/>
+    <keyword type="function" name="lightdm_get_layouts ()" link="lightdm-gobject-1-Keyboard-Layout.html#lightdm-get-layouts"/>
+    <keyword type="function" name="lightdm_get_layout ()" link="lightdm-gobject-1-Keyboard-Layout.html#lightdm-get-layout"/>
+    <keyword type="function" name="lightdm_set_layout ()" link="lightdm-gobject-1-Keyboard-Layout.html#lightdm-set-layout"/>
+    <keyword type="function" name="lightdm_layout_get_name ()" link="lightdm-gobject-1-Keyboard-Layout.html#lightdm-layout-get-name"/>
+    <keyword type="function" name="lightdm_layout_get_short_description ()" link="lightdm-gobject-1-Keyboard-Layout.html#lightdm-layout-get-short-description"/>
+    <keyword type="function" name="lightdm_layout_get_description ()" link="lightdm-gobject-1-Keyboard-Layout.html#lightdm-layout-get-description"/>
+    <keyword type="function" name="lightdm_get_remote_sessions ()" link="lightdm-gobject-1-Sessions.html#lightdm-get-remote-sessions"/>
+    <keyword type="function" name="lightdm_get_sessions ()" link="lightdm-gobject-1-Sessions.html#lightdm-get-sessions"/>
+    <keyword type="function" name="lightdm_session_get_key ()" link="lightdm-gobject-1-Sessions.html#lightdm-session-get-key"/>
+    <keyword type="function" name="lightdm_session_get_session_type ()" link="lightdm-gobject-1-Sessions.html#lightdm-session-get-session-type"/>
+    <keyword type="function" name="lightdm_session_get_name ()" link="lightdm-gobject-1-Sessions.html#lightdm-session-get-name"/>
+    <keyword type="function" name="lightdm_session_get_comment ()" link="lightdm-gobject-1-Sessions.html#lightdm-session-get-comment"/>
+    <keyword type="function" name="changed ()" link="lightdm-gobject-1-User-Accounts.html#changed"/>
+    <keyword type="function" name="lightdm_user_get_background ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-background"/>
+    <keyword type="function" name="lightdm_user_get_display_name ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-display-name"/>
+    <keyword type="function" name="lightdm_user_get_has_messages ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-has-messages"/>
+    <keyword type="function" name="lightdm_user_get_home_directory ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-home-directory"/>
+    <keyword type="function" name="lightdm_user_get_image ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-image"/>
+    <keyword type="function" name="lightdm_user_get_language ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-language"/>
+    <keyword type="function" name="lightdm_user_get_layout ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-layout"/>
+    <keyword type="function" name="lightdm_user_get_layouts ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-layouts"/>
+    <keyword type="function" name="lightdm_user_get_logged_in ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-logged-in"/>
+    <keyword type="function" name="lightdm_user_get_name ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-name"/>
+    <keyword type="function" name="lightdm_user_get_real_name ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-real-name"/>
+    <keyword type="function" name="lightdm_user_get_session ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-session"/>
+    <keyword type="function" name="lightdm_user_get_uid ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-get-uid"/>
+    <keyword type="function" name="user_added ()" link="lightdm-gobject-1-User-Accounts.html#user-added"/>
+    <keyword type="function" name="user_changed ()" link="lightdm-gobject-1-User-Accounts.html#user-changed"/>
+    <keyword type="function" name="user_removed ()" link="lightdm-gobject-1-User-Accounts.html#user-removed"/>
+    <keyword type="function" name="lightdm_user_list_get_instance ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-instance"/>
+    <keyword type="function" name="lightdm_user_list_get_length ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-length"/>
+    <keyword type="function" name="lightdm_user_list_get_user_by_name ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-user-by-name"/>
+    <keyword type="function" name="lightdm_user_list_get_users ()" link="lightdm-gobject-1-User-Accounts.html#lightdm-user-list-get-users"/>
+    <keyword type="function" name="lightdm_get_can_suspend ()" link="lightdm-gobject-1-Power-Management.html#lightdm-get-can-suspend"/>
+    <keyword type="function" name="lightdm_suspend ()" link="lightdm-gobject-1-Power-Management.html#lightdm-suspend"/>
+    <keyword type="function" name="lightdm_get_can_hibernate ()" link="lightdm-gobject-1-Power-Management.html#lightdm-get-can-hibernate"/>
+    <keyword type="function" name="lightdm_hibernate ()" link="lightdm-gobject-1-Power-Management.html#lightdm-hibernate"/>
+    <keyword type="function" name="lightdm_get_can_restart ()" link="lightdm-gobject-1-Power-Management.html#lightdm-get-can-restart"/>
+    <keyword type="function" name="lightdm_restart ()" link="lightdm-gobject-1-Power-Management.html#lightdm-restart"/>
+    <keyword type="function" name="lightdm_get_can_shutdown ()" link="lightdm-gobject-1-Power-Management.html#lightdm-get-can-shutdown"/>
+    <keyword type="function" name="lightdm_shutdown ()" link="lightdm-gobject-1-Power-Management.html#lightdm-shutdown"/>
+    <keyword type="function" name="lightdm_get_hostname ()" link="lightdm-gobject-1-System-Information.html#lightdm-get-hostname"/>
+    <keyword type="constant" name="LIGHTDM_MESSAGE_TYPE_INFO" link="lightdm-gobject-1-Greeter-Interface.html#LIGHTDM-MESSAGE-TYPE-INFO:CAPS"/>
+    <keyword type="constant" name="LIGHTDM_MESSAGE_TYPE_ERROR" link="lightdm-gobject-1-Greeter-Interface.html#LIGHTDM-MESSAGE-TYPE-ERROR:CAPS"/>
+    <keyword type="constant" name="LIGHTDM_PROMPT_TYPE_QUESTION" link="lightdm-gobject-1-Greeter-Interface.html#LIGHTDM-PROMPT-TYPE-QUESTION:CAPS"/>
+    <keyword type="constant" name="LIGHTDM_PROMPT_TYPE_SECRET" link="lightdm-gobject-1-Greeter-Interface.html#LIGHTDM-PROMPT-TYPE-SECRET:CAPS"/>
+  </functions>
+</book>

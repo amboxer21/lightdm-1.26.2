@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Keyboard Layouts: LightDM Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="LightDM Reference Manual">
+<link rel="up" href="core.html" title="Part I. liblightdm-gobject">
+<link rel="prev" href="lightdm-gobject-1-Languages.html" title="Languages">
+<link rel="next" href="lightdm-gobject-1-Sessions.html" title="User Sessions">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#lightdm-gobject-1-Keyboard-Layout.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="lightdm-gobject-1-Languages.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="lightdm-gobject-1-Sessions.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="lightdm-gobject-1-Keyboard-Layout"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="lightdm-gobject-1-Keyboard-Layout.top_of_page"></a>Keyboard Layouts</span></h2>
+<p>Keyboard Layouts — Control the keyboard layout</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Keyboard-Layout.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Keyboard-Layout.html#lightdm-get-layouts" title="lightdm_get_layouts ()">lightdm_get_layouts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">LightDMLayout</span> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Keyboard-Layout.html#lightdm-get-layout" title="lightdm_get_layout ()">lightdm_get_layout</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Keyboard-Layout.html#lightdm-set-layout" title="lightdm_set_layout ()">lightdm_set_layout</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Keyboard-Layout.html#lightdm-layout-get-name" title="lightdm_layout_get_name ()">lightdm_layout_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Keyboard-Layout.html#lightdm-layout-get-short-description" title="lightdm_layout_get_short_description ()">lightdm_layout_get_short_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Keyboard-Layout.html#lightdm-layout-get-description" title="lightdm_layout_get_description ()">lightdm_layout_get_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Keyboard-Layout.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;lightdm.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Keyboard-Layout.description"></a><h2>Description</h2>
+<p>
+<span class="type">LightDMLayout</span> is an object that describes a keyboard that is available on the system.
+</p>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Keyboard-Layout.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="lightdm-get-layouts"></a><h3>lightdm_get_layouts ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+lightdm_get_layouts (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get a list of keyboard layouts to present to the user.</p>
+<div class="refsect3">
+<a name="lightdm-get-layouts.returns"></a><h4>Returns</h4>
+<p> A list of <span class="type">LightDMLayout</span> that should be presented to the user. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> LightDMLayout][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-get-layout"></a><h3>lightdm_get_layout ()</h3>
+<pre class="programlisting"><span class="returnvalue">LightDMLayout</span> *
+lightdm_get_layout (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the current keyboard layout.</p>
+<div class="refsect3">
+<a name="lightdm-get-layout.returns"></a><h4>Returns</h4>
+<p> The currently active layout for this user. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-set-layout"></a><h3>lightdm_set_layout ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_set_layout (<em class="parameter"><code><span class="type">LightDMLayout</span> *layout</code></em>);</pre>
+<p>Set the layout for this session.</p>
+<div class="refsect3">
+<a name="lightdm-set-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layout</p></td>
+<td class="parameter_description"><p>The layout to use</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-layout-get-name"></a><h3>lightdm_layout_get_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_layout_get_name (<em class="parameter"><code><span class="type">LightDMLayout</span> *layout</code></em>);</pre>
+<p>Get the name of a layout.</p>
+<div class="refsect3">
+<a name="lightdm-layout-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layout</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMLayout</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-layout-get-name.returns"></a><h4>Returns</h4>
+<p> The name of the layout</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-layout-get-short-description"></a><h3>lightdm_layout_get_short_description ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_layout_get_short_description (<em class="parameter"><code><span class="type">LightDMLayout</span> *layout</code></em>);</pre>
+<p>Get the short description of a layout.</p>
+<div class="refsect3">
+<a name="lightdm-layout-get-short-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layout</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMLayout</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-layout-get-short-description.returns"></a><h4>Returns</h4>
+<p> A short description of the layout</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-layout-get-description"></a><h3>lightdm_layout_get_description ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_layout_get_description (<em class="parameter"><code><span class="type">LightDMLayout</span> *layout</code></em>);</pre>
+<p>Get the long description of a layout.</p>
+<div class="refsect3">
+<a name="lightdm-layout-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layout</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMLayout</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-layout-get-description.returns"></a><h4>Returns</h4>
+<p> A long description of the layout</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Keyboard-Layout.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

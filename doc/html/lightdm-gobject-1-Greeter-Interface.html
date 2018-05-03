@@ -1,0 +1,1620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Greeter Interface: LightDM Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="LightDM Reference Manual">
+<link rel="up" href="core.html" title="Part I. liblightdm-gobject">
+<link rel="prev" href="core.html" title="Part I. liblightdm-gobject">
+<link rel="next" href="lightdm-gobject-1-Languages.html" title="Languages">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#lightdm-gobject-1-Greeter-Interface.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="core.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="lightdm-gobject-1-Languages.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="lightdm-gobject-1-Greeter-Interface"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="lightdm-gobject-1-Greeter-Interface.top_of_page"></a>Greeter Interface</span></h2>
+<p>Greeter Interface — Make a connection to the LightDM daemon and authenticate users</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Greeter-Interface.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#show-message" title="show_message ()">*show_message</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#show-prompt" title="show_prompt ()">*show_prompt</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#authentication-complete" title="authentication_complete ()">*authentication_complete</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#autologin-timer-expired" title="autologin_timer_expired ()">*autologin_timer_expired</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#idle" title="idle ()">*idle</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#reset" title="reset ()">*reset</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">LightDMGreeter</span> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-new" title="lightdm_greeter_new ()">lightdm_greeter_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-set-resettable" title="lightdm_greeter_set_resettable ()">lightdm_greeter_set_resettable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon" title="lightdm_greeter_connect_to_daemon ()">lightdm_greeter_connect_to_daemon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon-finish" title="lightdm_greeter_connect_to_daemon_finish ()">lightdm_greeter_connect_to_daemon_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon-sync" title="lightdm_greeter_connect_to_daemon_sync ()">lightdm_greeter_connect_to_daemon_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-ensure-shared-data-dir" title="lightdm_greeter_ensure_shared_data_dir ()">lightdm_greeter_ensure_shared_data_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-ensure-shared-data-dir-finish" title="lightdm_greeter_ensure_shared_data_dir_finish ()">lightdm_greeter_ensure_shared_data_dir_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-ensure-shared-data-dir-sync" title="lightdm_greeter_ensure_shared_data_dir_sync ()">lightdm_greeter_ensure_shared_data_dir_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-default-session-hint" title="lightdm_greeter_get_default_session_hint ()">lightdm_greeter_get_default_session_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-hint" title="lightdm_greeter_get_hint ()">lightdm_greeter_get_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-lock-hint" title="lightdm_greeter_get_lock_hint ()">lightdm_greeter_get_lock_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-has-guest-account-hint" title="lightdm_greeter_get_has_guest_account_hint ()">lightdm_greeter_get_has_guest_account_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-hide-users-hint" title="lightdm_greeter_get_hide_users_hint ()">lightdm_greeter_get_hide_users_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-show-manual-login-hint" title="lightdm_greeter_get_show_manual_login_hint ()">lightdm_greeter_get_show_manual_login_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-show-remote-login-hint" title="lightdm_greeter_get_show_remote_login_hint ()">lightdm_greeter_get_show_remote_login_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-select-user-hint" title="lightdm_greeter_get_select_user_hint ()">lightdm_greeter_get_select_user_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-select-guest-hint" title="lightdm_greeter_get_select_guest_hint ()">lightdm_greeter_get_select_guest_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-autologin-user-hint" title="lightdm_greeter_get_autologin_user_hint ()">lightdm_greeter_get_autologin_user_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-autologin-guest-hint" title="lightdm_greeter_get_autologin_guest_hint ()">lightdm_greeter_get_autologin_guest_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-autologin-timeout-hint" title="lightdm_greeter_get_autologin_timeout_hint ()">lightdm_greeter_get_autologin_timeout_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-set-language" title="lightdm_greeter_set_language ()">lightdm_greeter_set_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-cancel-autologin" title="lightdm_greeter_cancel_autologin ()">lightdm_greeter_cancel_autologin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate" title="lightdm_greeter_authenticate ()">lightdm_greeter_authenticate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate-as-guest" title="lightdm_greeter_authenticate_as_guest ()">lightdm_greeter_authenticate_as_guest</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate-autologin" title="lightdm_greeter_authenticate_autologin ()">lightdm_greeter_authenticate_autologin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-authenticate-remote" title="lightdm_greeter_authenticate_remote ()">lightdm_greeter_authenticate_remote</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-respond" title="lightdm_greeter_respond ()">lightdm_greeter_respond</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-cancel-authentication" title="lightdm_greeter_cancel_authentication ()">lightdm_greeter_cancel_authentication</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-in-authentication" title="lightdm_greeter_get_in_authentication ()">lightdm_greeter_get_in_authentication</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-is-authenticated" title="lightdm_greeter_get_is_authenticated ()">lightdm_greeter_get_is_authenticated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-get-authentication-user" title="lightdm_greeter_get_authentication_user ()">lightdm_greeter_get_authentication_user</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session" title="lightdm_greeter_start_session ()">lightdm_greeter_start_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session-finish" title="lightdm_greeter_start_session_finish ()">lightdm_greeter_start_session_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session-sync" title="lightdm_greeter_start_session_sync ()">lightdm_greeter_start_session_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Greeter-Interface.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#LightDMMessageType" title="enum LightDMMessageType">LightDMMessageType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#LightDMPromptType" title="enum LightDMPromptType">LightDMPromptType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Greeter-Interface.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;lightdm.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Greeter-Interface.description"></a><h2>Description</h2>
+<p>
+<span class="type">LightDMGreeter</span> is an object that manages the connection to the LightDM server and provides common greeter functionality.
+</p>
+<p>
+</p>
+<div class="example">
+<a name="id-1.2.2.6.3.1"></a><p class="title"><b>Example 1. Example Greeter</b></p>
+<div class="example-contents"><pre class="programlisting">
+int main ()
+{
+    GMainLoop *main_loop;
+    LightDMGreeter *greeter
+    main_loop = g_main_loop_new ();
+    greeter = lightdm_greeter_new ();
+    g_object_connect (greeter, "show-prompt", G_CALLBACK (show_prompt_cb), NULL);
+    g_object_connect (greeter, "authentication-complete", G_CALLBACK (authentication_complete_cb), NULL);
+    // Connect to LightDM daemon
+    if (!lightdm_greeter_connect_to_daemon_sync (greeter, NULL))
+        return EXIT_FAILURE;
+    // Start authentication
+    lightdm_greeter_authenticate (greeter, NULL);
+    g_main_loop_run (main_loop);
+    return EXIT_SUCCESS;
+}
+static void show_prompt_cb (LightDMGreeter *greeter, const char *text, LightDMPromptType type)
+{
+    // Show the user the message and prompt for some response
+    gchar *secret = prompt_user (text, type);
+    // Give the result to the user
+    lightdm_greeter_respond (greeter, response);
+}
+static void authentication_complete_cb (LightDMGreeter *greeter)
+{
+    // Start the session
+    if (!lightdm_greeter_get_is_authenticated (greeter) ||
+        !lightdm_greeter_start_session_sync (greeter, NULL))
+    {
+        // Failed authentication, try again
+        lightdm_greeter_authenticate (greeter, NULL);
+    }
+}
+</pre></div>
+</div>
+<p><br class="example-break">
+</p>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Greeter-Interface.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="show-message"></a><h3>show_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*show_message<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                 <em class="parameter"><code><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#LightDMMessageType" title="enum LightDMMessageType"><span class="type">LightDMMessageType</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="show-prompt"></a><h3>show_prompt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*show_prompt<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                <em class="parameter"><code><a class="link" href="lightdm-gobject-1-Greeter-Interface.html#LightDMPromptType" title="enum LightDMPromptType"><span class="type">LightDMPromptType</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="authentication-complete"></a><h3>authentication_complete ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*authentication_complete<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="autologin-timer-expired"></a><h3>autologin_timer_expired ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*autologin_timer_expired<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idle"></a><h3>idle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*idle<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="reset"></a><h3>reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*reset<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-new"></a><h3>lightdm_greeter_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">LightDMGreeter</span> *
+lightdm_greeter_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new greeter.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-new.returns"></a><h4>Returns</h4>
+<p> the new <span class="type">LightDMGreeter</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-set-resettable"></a><h3>lightdm_greeter_set_resettable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_set_resettable (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> resettable</code></em>);</pre>
+<p>Set whether the greeter will be reset instead of killed after the user logs in.
+This must be called before lightdm_greeter_connect is called.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-set-resettable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resettable</p></td>
+<td class="parameter_description"><p>Whether the greeter wants to be reset instead of killed after the user logs in</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-connect-to-daemon"></a><h3>lightdm_greeter_connect_to_daemon ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_connect_to_daemon (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously connects the greeter to the display manager.</p>
+<p>When the operation is finished, <em class="parameter"><code>callback</code></em>
+ will be invoked. You can then call <a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon-finish" title="lightdm_greeter_connect_to_daemon_finish ()"><code class="function">lightdm_greeter_connect_to_daemon_finish()</code></a> to get the result of the operation.</p>
+<p>See <a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon-sync" title="lightdm_greeter_connect_to_daemon_sync ()"><code class="function">lightdm_greeter_connect_to_daemon_sync()</code></a> for the synchronous version.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-connect-to-daemon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>The greeter to connect</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p> A <a href="/usr/share/gtk-doc/html/gioGCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p> A <a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when completed or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p> data to pass to the <em class="parameter"><code>callback</code></em>
+or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-connect-to-daemon-finish"></a><h3>lightdm_greeter_connect_to_daemon_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_connect_to_daemon_finish
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Finishes an operation started with <a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-connect-to-daemon" title="lightdm_greeter_connect_to_daemon ()"><code class="function">lightdm_greeter_connect_to_daemon()</code></a>.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-connect-to-daemon-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>The greeter the the request was done with</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-connect-to-daemon-finish.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if successfully connected</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-connect-to-daemon-sync"></a><h3>lightdm_greeter_connect_to_daemon_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_connect_to_daemon_sync
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Connects the greeter to the display manager.  Will block until connected.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-connect-to-daemon-sync.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>The greeter to connect</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-connect-to-daemon-sync.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if successfully connected</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-ensure-shared-data-dir"></a><h3>lightdm_greeter_ensure_shared_data_dir ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_ensure_shared_data_dir
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *username</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Ensure that a shared data dir for the given user is available.  Both the
+greeter user and <em class="parameter"><code>username</code></em>
+ will have write access to that folder.  The
+intention is that larger pieces of shared data would be stored there (files
+that the greeter creates but wants to give to a user -- like camera
+photos -- or files that the user creates but wants the greeter to
+see -- like contact avatars).</p>
+<p>LightDM will automatically create these if the user actually logs in, so
+greeters only need to call this method if they want to store something in
+the directory themselves.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-ensure-shared-data-dir.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>A username</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p> A <a href="/usr/share/gtk-doc/html/gioGCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p> A <a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when completed or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p> data to pass to the <em class="parameter"><code>callback</code></em>
+or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-ensure-shared-data-dir-finish"></a><h3>lightdm_greeter_ensure_shared_data_dir_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_ensure_shared_data_dir_finish
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a> *result</code></em>);</pre>
+<p>Function to call from lightdm_greeter_ensure_shared_data_dir callback.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-ensure-shared-data-dir-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-ensure-shared-data-dir-finish.returns"></a><h4>Returns</h4>
+<p> The path to the shared directory, free with g_free.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-ensure-shared-data-dir-sync"></a><h3>lightdm_greeter_ensure_shared_data_dir_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_ensure_shared_data_dir_sync
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *username</code></em>);</pre>
+<p>Ensure that a shared data dir for the given user is available.  Both the
+greeter user and <em class="parameter"><code>username</code></em>
+ will have write access to that folder.  The
+intention is that larger pieces of shared data would be stored there (files
+that the greeter creates but wants to give to a user -- like camera
+photos -- or files that the user creates but wants the greeter to
+see -- like contact avatars).</p>
+<p>LightDM will automatically create these if the user actually logs in, so
+greeters only need to call this method if they want to store something in
+the directory themselves.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-ensure-shared-data-dir-sync.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>A username</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-ensure-shared-data-dir-sync.returns"></a><h4>Returns</h4>
+<p> The path to the shared directory, free with g_free.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-default-session-hint"></a><h3>lightdm_greeter_get_default_session_hint ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_get_default_session_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Get the default session to use.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-default-session-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-default-session-hint.returns"></a><h4>Returns</h4>
+<p> The session name</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-hint"></a><h3>lightdm_greeter_get_hint ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_get_hint (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Get a hint.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The hint name to query.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-hint.returns"></a><h4>Returns</h4>
+<p> The value for this hint or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if not set. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-lock-hint"></a><h3>lightdm_greeter_get_lock_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_lock_hint (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if the greeter is acting as a lock screen.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-lock-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-lock-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the greeter was triggered by locking the seat.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-has-guest-account-hint"></a><h3>lightdm_greeter_get_has_guest_account_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_has_guest_account_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if guest sessions are supported.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-has-guest-account-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-has-guest-account-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if guest sessions are supported.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-hide-users-hint"></a><h3>lightdm_greeter_get_hide_users_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_hide_users_hint (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if user accounts should be shown.  If this is TRUE then the list of
+accounts should be taken from <span class="type">LightDMUserList</span> and displayed in the greeter
+for the user to choose from.  Note that this list can be empty and it is
+recommended you show a method for the user to enter a username manually.</p>
+<p>If this option is shown the greeter should only allow these users to be
+chosen for login unless the manual login hint is set.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-hide-users-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-hide-users-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the available users should not be shown.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-show-manual-login-hint"></a><h3>lightdm_greeter_get_show_manual_login_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_show_manual_login_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if a manual login option should be shown.  If set the GUI
+should provide a way for a username to be entered manually.
+Without this hint a greeter which is showing a user list can
+limit logins to only those users.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-show-manual-login-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-show-manual-login-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if a manual login option should be shown.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-show-remote-login-hint"></a><h3>lightdm_greeter_get_show_remote_login_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_show_remote_login_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if a remote login option should be shown.  If set the GUI
+should provide a way for a user to log into a remote desktop server.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-show-remote-login-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-show-remote-login-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if a remote login option should be shown.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-select-user-hint"></a><h3>lightdm_greeter_get_select_user_hint ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_get_select_user_hint (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Get the user to select by default.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-select-user-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-select-user-hint.returns"></a><h4>Returns</h4>
+<p> A username or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no particular user should be selected. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-select-guest-hint"></a><h3>lightdm_greeter_get_select_guest_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_select_guest_hint (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if the guest account should be selected by default.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-select-guest-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-select-guest-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the guest account should be selected by default.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-autologin-user-hint"></a><h3>lightdm_greeter_get_autologin_user_hint ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_get_autologin_user_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Get the user account to automatically log into when the timer expires.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-autologin-user-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-autologin-user-hint.returns"></a><h4>Returns</h4>
+<p> The user account to automatically log into or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none configured. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-autologin-guest-hint"></a><h3>lightdm_greeter_get_autologin_guest_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_autologin_guest_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Check if the guest account should be automatically logged into when the timer expires.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-autologin-guest-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-autologin-guest-hint.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the guest account should be automatically logged into.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-autologin-timeout-hint"></a><h3>lightdm_greeter_get_autologin_timeout_hint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+lightdm_greeter_get_autologin_timeout_hint
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Get the number of seconds to wait before automaitcally logging in.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-autologin-timeout-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-autologin-timeout-hint.returns"></a><h4>Returns</h4>
+<p> The number of seconds to wait before automatically logging in or 0 for no timeout.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-set-language"></a><h3>lightdm_greeter_set_language ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_set_language (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *language</code></em>);</pre>
+<p>Set the language for the currently authenticated user.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-set-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>The language to use for this user in the form of a locale specification (e.g. "de_DE.UTF-8").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-cancel-autologin"></a><h3>lightdm_greeter_cancel_autologin ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_cancel_autologin (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Cancel the automatic login.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-cancel-autologin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-authenticate"></a><h3>lightdm_greeter_authenticate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_authenticate (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *username</code></em>);</pre>
+<p>Starts the authentication procedure for a user.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-authenticate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p> A username or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> to prompt for a username. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-authenticate-as-guest"></a><h3>lightdm_greeter_authenticate_as_guest ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_authenticate_as_guest (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Starts the authentication procedure for the guest user.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-authenticate-as-guest.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-authenticate-autologin"></a><h3>lightdm_greeter_authenticate_autologin ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_authenticate_autologin
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Starts the authentication procedure for the automatic login user.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-authenticate-autologin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-authenticate-remote"></a><h3>lightdm_greeter_authenticate_remote ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_authenticate_remote (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *session</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *username</code></em>);</pre>
+<p>Start authentication for a remote session type.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-authenticate-remote.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>The name of a remote session</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p> A username of <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> to prompt for a username. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-respond"></a><h3>lightdm_greeter_respond ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_respond (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *response</code></em>);</pre>
+<p>Provide response to a prompt.  May be one in a series.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-respond.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>response</p></td>
+<td class="parameter_description"><p>Response to a prompt</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-cancel-authentication"></a><h3>lightdm_greeter_cancel_authentication ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_cancel_authentication (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Cancel the current user authentication.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-cancel-authentication.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-in-authentication"></a><h3>lightdm_greeter_get_in_authentication ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_in_authentication (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Checks if the greeter is in the process of authenticating.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-in-authentication.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-in-authentication.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the greeter is authenticating a user.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-is-authenticated"></a><h3>lightdm_greeter_get_is_authenticated ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_get_is_authenticated (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Checks if the greeter has successfully authenticated.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-is-authenticated.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-is-authenticated.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the greeter is authenticated for login.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-get-authentication-user"></a><h3>lightdm_greeter_get_authentication_user ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+lightdm_greeter_get_authentication_user
+                               (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>);</pre>
+<p>Get the user that is being authenticated.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-get-authentication-user.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-get-authentication-user.returns"></a><h4>Returns</h4>
+<p> The username of the authentication user being authenticated or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if no authentication in progress. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-start-session"></a><h3>lightdm_greeter_start_session ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lightdm_greeter_start_session (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *session</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously start a session for the authenticated user.</p>
+<p>When the operation is finished, <em class="parameter"><code>callback</code></em>
+ will be invoked. You can then call <a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session-finish" title="lightdm_greeter_start_session_finish ()"><code class="function">lightdm_greeter_start_session_finish()</code></a> to get the result of the operation.</p>
+<p>See <a class="link" href="lightdm-gobject-1-Greeter-Interface.html#lightdm-greeter-start-session-sync" title="lightdm_greeter_start_session_sync ()"><code class="function">lightdm_greeter_start_session_sync()</code></a> for the synchronous version.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-start-session.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p> The session to log into or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> to use the default. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p> A <a href="/usr/share/gtk-doc/html/gioGCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p> A <a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when completed or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p> data to pass to the <em class="parameter"><code>callback</code></em>
+or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-start-session-finish"></a><h3>lightdm_greeter_start_session_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_start_session_finish (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Start a session for the authenticated user.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-start-session-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gioGAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-start-session-finish.returns"></a><h4>Returns</h4>
+<p> TRUE if the session was started.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lightdm-greeter-start-session-sync"></a><h3>lightdm_greeter_start_session_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lightdm_greeter_start_session_sync (<em class="parameter"><code><span class="type">LightDMGreeter</span> *greeter</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *session</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Start a session for the authenticated user.</p>
+<div class="refsect3">
+<a name="lightdm-greeter-start-session-sync.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>greeter</p></td>
+<td class="parameter_description"><p>A <span class="type">LightDMGreeter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p> The session to log into or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> to use the default. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lightdm-greeter-start-session-sync.returns"></a><h4>Returns</h4>
+<p> TRUE if the session was started.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="lightdm-gobject-1-Greeter-Interface.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="LightDMMessageType"></a><h3>enum LightDMMessageType</h3>
+<div class="refsect3">
+<a name="LightDMMessageType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LIGHTDM-MESSAGE-TYPE-INFO:CAPS"></a>LIGHTDM_MESSAGE_TYPE_INFO</p></td>
+<td class="enum_member_description">
+<p>Informational message.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LIGHTDM-MESSAGE-TYPE-ERROR:CAPS"></a>LIGHTDM_MESSAGE_TYPE_ERROR</p></td>
+<td class="enum_member_description">
+<p>Error message.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LightDMPromptType"></a><h3>enum LightDMPromptType</h3>
+<div class="refsect3">
+<a name="LightDMPromptType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LIGHTDM-PROMPT-TYPE-QUESTION:CAPS"></a>LIGHTDM_PROMPT_TYPE_QUESTION</p></td>
+<td class="enum_member_description">
+<p>Prompt is a question.  The information can be shown as it is entered.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LIGHTDM-PROMPT-TYPE-SECRET:CAPS"></a>LIGHTDM_PROMPT_TYPE_SECRET</p></td>
+<td class="enum_member_description">
+<p>Prompt is for secret information.  The entered information should be obscured so it can't be publically visible.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>
